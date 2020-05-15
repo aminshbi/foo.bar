@@ -1,12 +1,15 @@
-Challenge #1: Solar Doomsday
 ==============
+LEVEL #1
+==============
+-------------------------------------
+Challenge #1: Solar Doomsday
+-------------------------------------
 
 Who would've guessed? Doomsday devices take a LOT of power. Commander Lambda wants to supplement the LAMBCHOP's quantum antimatter reactor core with solar arrays, and she's tasked you with setting up the solar panels. 
 
 Due to the nature of the space station's outer paneling, all of its solar panels must be squares. Fortunately, you have one very large and flat area of solar material, a pair of industrial-strength scissors, and enough MegaCorp Solar Tape(TM) to piece together any excess panel material into more squares. For example, if you had a total area of 12 square yards of solar material, you would be able to make one 3x3 square panel (with a total area of 9). That would leave 3 square yards, so you can turn those into three 1x1 square solar panels.
 
 Write a function solution(area) that takes as its input a single unit of measure representing the total area of solar panels you have (between 1 and 1000000 inclusive) and returns a list of the areas of the largest squares you could make out of those panels, starting with the largest squares first. So, following the example above, solution(12) would return [9, 1, 1, 1].
-
 
 Test cases
 ==========
@@ -21,8 +24,12 @@ Solution.solution(15324)
 Output:
     15129,169,25,1
 
-Challenge #2: Don't Get Volunteered!
-======================
+==============
+LEVEL #2
+==============
+---------------------------------------------
+Challenge #1: Don't Get Volunteered!
+---------------------------------------------
 
 As a henchman on Commander Lambda's space station, you're expected to be resourceful, smart, and a quick thinker. It's not easy building a doomsday device and capturing bunnies at the same time, after all! In order to make sure that everyone working for her is sufficiently quick-witted, Commander Lambda has installed new flooring outside the henchman dormitories. It looks like a chessboard, and every morning and evening you have to solve a new movement puzzle in order to cross the floor. That would be fine if you got to be the rook or the queen, but instead, you have to be the knight. Worse, if you take too much time solving the puzzle, you get "volunteered" as a test subject for the LAMBCHOP doomsday device!
 
@@ -58,3 +65,30 @@ Input:
 Solution.solution(0, 1)
 Output:
     3
+
+------------------------------------
+Challenge #2: En Route Salute
+------------------------------------
+
+Commander Lambda loves efficiency and hates anything that wastes time. She's a busy lamb, after all! She generously rewards henchmen who identify sources of inefficiency and come up with ways to remove them. You've spotted one such source, and you think solving it will help you build the reputation you need to get promoted.
+
+Every time the Commander's employees pass each other in the hall, each of them must stop and salute each other - one at a time - before resuming their path. A salute is five seconds long, so each exchange of salutes takes a full ten seconds (Commander Lambda's salute is a bit, er, involved). You think that by removing the salute requirement, you could save several collective hours of employee time per day. But first, you need to show her how bad the problem really is.
+
+Write a program that counts how many salutes are exchanged during a typical walk along a hallway. The hall is represented by a string. For example:
+"--->-><-><-->-"
+
+Each hallway string will contain three different types of characters: '>', an employee walking to the right; '<', an employee walking to the left; and '-', an empty space. Every employee walks at the same speed either to right or to the left, according to their direction. Whenever two employees cross, each of them salutes the other. They then continue walking until they reach the end, finally leaving the hallway. In the above example, they salute 10 times.
+
+Write a function solution(s) which takes a string representing employees walking along a hallway and returns the number of times the employees will salute. s will contain at least 1 and at most 100 characters, each one of -, >, or <.
+
+Test cases
+==========
+Input:
+Solution.solution("<<>><")
+Output:
+    4
+
+Input:
+Solution.solution(">----<")
+Output:
+    2

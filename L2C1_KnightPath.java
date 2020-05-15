@@ -1,5 +1,5 @@
 
-public class KnightPath {
+public class L2C1_KnightPath {
 
     public static int solution(int src, int dest) {
 
@@ -67,7 +67,7 @@ public class KnightPath {
     public static void main(String[] args) throws Exception {
         // Your code here!
 
-        int result = solution(0,1);
+        int result = solution(0,17);
 
 
         System.out.println("\n Result is: " +result);
