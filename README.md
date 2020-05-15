@@ -11,8 +11,7 @@ Due to the nature of the space station's outer paneling, all of its solar panels
 
 Write a function solution(area) that takes as its input a single unit of measure representing the total area of solar panels you have (between 1 and 1000000 inclusive) and returns a list of the areas of the largest squares you could make out of those panels, starting with the largest squares first. So, following the example above, solution(12) would return [9, 1, 1, 1].
 
-Test cases
-==========
+Test cases:
 
 Input:
 Solution.solution(12)
@@ -35,26 +34,24 @@ As a henchman on Commander Lambda's space station, you're expected to be resourc
 
 To help yourself get to and from your bunk every day, write a function called solution(src, dest) which takes in two parameters: the source square, on which you start, and the destination square, which is where you need to land to solve the puzzle.  The function should return an integer representing the smallest number of moves it will take for you to travel from the source square to the destination square using a chess knight's moves (that is, two squares in any direction immediately followed by one square perpendicular to that direction, or vice versa, in an "L" shape).  Both the source and destination squares will be an integer between 0 and 63, inclusive, and are numbered like the example chessboard below:
 
--------------------------
 | 0| 1| 2| 3| 4| 5| 6| 7|
--------------------------
-| 8| 9|10|11|12|13|14|15|
--------------------------
-|16|17|18|19|20|21|22|23|
--------------------------
-|24|25|26|27|28|29|30|31|
--------------------------
-|32|33|34|35|36|37|38|39|
--------------------------
-|40|41|42|43|44|45|46|47|
--------------------------
-|48|49|50|51|52|53|54|55|
--------------------------
-|56|57|58|59|60|61|62|63|
--------------------------
 
-Test cases
-==========
+| 8| 9|10|11|12|13|14|15|
+
+|16|17|18|19|20|21|22|23|
+
+|24|25|26|27|28|29|30|31|
+
+|32|33|34|35|36|37|38|39|
+
+|40|41|42|43|44|45|46|47|
+
+|48|49|50|51|52|53|54|55|
+
+|56|57|58|59|60|61|62|63|
+
+
+Test cases:
 
 Input:
 Solution.solution(19, 36)
@@ -81,8 +78,8 @@ Each hallway string will contain three different types of characters: '>', an em
 
 Write a function solution(s) which takes a string representing employees walking along a hallway and returns the number of times the employees will salute. s will contain at least 1 and at most 100 characters, each one of -, >, or <.
 
-Test cases
-==========
+Test cases:
+
 Input:
 Solution.solution("<<>><")
 Output:
