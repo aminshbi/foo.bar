@@ -67,9 +67,9 @@ public class L3C3_FindTheAccessCodes {
         int[] test1 = new int[]{1, 2, 3, 5, 7, 9, 10};
         int[] test2 = new int[]{1, 1, 1};
         int[] test3 = new int[]{1, 3, 5, 7, 11, 13, 17, 19, 23};
-        int result1 = solution2(test1);
-        int result2 = solution2(test2);
-        int result3 = solution2(test3);
+        int result1 = solution(test1);
+        int result2 = solution(test2);
+        int result3 = solution(test3);
         System.out.println("result1: " + result1);
         System.out.println("result2: " + result2);
         System.out.println("result3: " + result3);
